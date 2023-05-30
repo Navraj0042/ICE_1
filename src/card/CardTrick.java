@@ -29,24 +29,32 @@ public class CardTrick
         }
         
         //insert code to ask the user for Card value and suit, create their card
+        /*
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of your card: ");
         int userValue = scanner.nextInt();
         System.out.print("Enter the suit of your card (0-3): ");
         int userSuit = scanner.nextInt();
+        */
         
         //Creating user's card
-        
+        /*
         Card userCard = new Card();
         userCard.setValue(userValue);
         userCard.setSuit(Card.SUITS[userSuit]);// suits are already pre-defined in "SUITS" array
+        */
+        
+       //Hard coding luckyCard
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); //7 of Diamonds
+        luckyCard.setSuit(Card.SUITS[1]);
         
         // and search magicHand here
         
         boolean foundMatch=false;
         for (int i = 0; i < magicHand.length; i++)
         {
-            if (magicHand[i].equals(userCard))
+            if (magicHand[i].equals(luckyCard))
             {
             foundMatch = true;
             break;
