@@ -9,6 +9,8 @@ import java.util.Scanner;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author srinivsi
+ * @modifier Navraj Singh Garcha
+ * Student Number : 991700368
  */
 public class CardTrick 
 {
@@ -44,7 +46,7 @@ public class CardTrick
         userCard.setSuit(Card.SUITS[userSuit]);// suits are already pre-defined in "SUITS" array
         */
         
-       //Hard coding luckyCard
+       //Hard coding luckyCard in the git repository
         Card luckyCard = new Card();
         luckyCard.setValue(7); //7 of Diamonds
         luckyCard.setSuit(Card.SUITS[1]);
